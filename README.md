@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> GitHub Profiles A website built with HTML, SCSS, and TypeScript, utilizing the GitHub API and Axios for seamless data retrieval. Linters are employed to maintain clean code. Explore the live demo to search for any GitHub user.
+> Feedback UI Design is a website created with HTML, SCSS, and TypeScript. We utilize linters to overcome code errors and maintain clean, efficient code. Please take a moment to check out the live demo for a hands-on experience.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
