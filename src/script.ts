@@ -1,5 +1,8 @@
 //selecting elements
 const emojisCards = document.querySelectorAll(".emoji-Card");
+const SendBtn: any = document.getElementsByClassName("Send-Btn")[0];
+const headerEl: any = document.getElementsByClassName("header")[0];
+const thankWrapperEl: any = document.getElementsByClassName("thank-Wrapper")[0];
 
 // global veribales
 
@@ -31,4 +34,8 @@ emojisCards.forEach((emojiEl) => {
     changeStyleFunction(emojiEl);
     console.log(emojiEl);
   });
+});
+
+SendBtn.addEventListener("click", () => {
+  console.log("hallo world");
 });
