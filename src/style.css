@@ -43,3 +43,49 @@ body {
   font-weight: 600;
   max-width: 80%;
 }
+
+.header .head .emojis-Wrap {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.header .head .emojis-Wrap .emoji-Card {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee7da;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.header .head .emojis-Wrap .emoji-Card i {
+  color: yellow;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.header .head .emojis-Wrap .emoji-Card h3 {
+  font-size: 15px;
+  padding: 0;
+  margin: 2px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header .head .emojis-Wrap .emoji-Card.selected {
+  filter: drop-shadow(0 0 5px rgb(102, 102, 102));
+  transform: scale(1.2);
+  margin: 10px;
+  border-radius: 5px;
+}
