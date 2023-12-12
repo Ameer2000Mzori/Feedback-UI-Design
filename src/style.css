@@ -4,3 +4,42 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: #eee7da;
+}
+
+.header .head {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+  background-color: #f3f8ff;
+  border: solid rgb(189, 189, 189) 5px;
+  border-radius: 15px 15px 0 0;
+}
+
+.header .head .p-Wrapper {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .head .p-Wrapper p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  max-width: 80%;
+}
