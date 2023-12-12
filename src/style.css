@@ -65,6 +65,7 @@ body {
   background-color: #eee7da;
   cursor: pointer;
   transition: all 100ms ease-in-out;
+  border-radius: 5px;
 }
 
 .header .head .emojis-Wrap .emoji-Card i {
@@ -85,7 +86,38 @@ body {
 
 .header .head .emojis-Wrap .emoji-Card.selected {
   filter: drop-shadow(0 0 5px rgb(102, 102, 102));
-  transform: scale(1.2);
+  transform: scale(1.1);
   margin: 10px;
   border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.header .head .button-Wrap {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.header .head .button-Wrap .Send-Btn {
+  padding: 10px 36px;
+  border: solid black 2px;
+  background-color: #f3f8ff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.header .head .button-Wrap .Send-Btn:hover {
+  border: solid black 4px;
+  background-color: #eee7da;
+}
+
+.header .head .button-Wrap .Send-Btn:active {
+  transform: scale(0.9);
 }
