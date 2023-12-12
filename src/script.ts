@@ -3,9 +3,10 @@ const emojisCards = document.querySelectorAll(".emoji-Card");
 const SendBtn: any = document.getElementsByClassName("Send-Btn")[0];
 const headerEl: any = document.getElementsByClassName("header")[0];
 const thankWrapperEl: any = document.getElementsByClassName("thank-Wrapper")[0];
+const secondP = document.getElementsByClassName("second-P")[0];
 
 // global veribales
-let reactText: any = "i dont like it ";
+let reactText: any = "Neutral";
 
 // functions
 const changeStyleFunction = (emojiEl) => {
@@ -24,6 +25,7 @@ const hideHeaderFunction = (): void => {
   headerEl.hidden = true;
   thankWrapperEl.hidden = false;
   thankWrapperEl.style.display = `flex`;
+  secondP.textContent += ` ${reactText}`;
 };
 
 // eventlinsters
