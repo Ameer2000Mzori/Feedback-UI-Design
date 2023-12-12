@@ -5,6 +5,7 @@ const headerEl: any = document.getElementsByClassName("header")[0];
 const thankWrapperEl: any = document.getElementsByClassName("thank-Wrapper")[0];
 
 // global veribales
+let reactText: any = "i dont like it ";
 
 // functions
 const changeStyleFunction = (emojiEl) => {
@@ -22,6 +23,7 @@ const changeStyleFunction = (emojiEl) => {
 const hideHeaderFunction = (): void => {
   headerEl.hidden = true;
   thankWrapperEl.hidden = false;
+  thankWrapperEl.style.display = `flex`;
 };
 
 // eventlinsters
@@ -37,9 +39,10 @@ const hideHeaderFunction = (): void => {
 // i prefer click
 
 emojisCards.forEach((emojiEl) => {
-  emojiEl.addEventListener("click", () => {
+  emojiEl.addEventListener("click", (e: any) => {
+    console.log(e);
     changeStyleFunction(emojiEl);
-    console.log(emojiEl);
+    reactText = emojiEl.lastElementChild?.textContent;
   });
 });
 

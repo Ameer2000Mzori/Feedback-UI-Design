@@ -4,6 +4,7 @@ var SendBtn = document.getElementsByClassName("Send-Btn")[0];
 var headerEl = document.getElementsByClassName("header")[0];
 var thankWrapperEl = document.getElementsByClassName("thank-Wrapper")[0];
 // global veribales
+var reactText = "i dont like it ";
 // functions
 var changeStyleFunction = function (emojiEl) {
     // removing any selected class that an element has
@@ -17,6 +18,7 @@ var changeStyleFunction = function (emojiEl) {
 var hideHeaderFunction = function () {
     headerEl.hidden = true;
     thankWrapperEl.hidden = false;
+    thankWrapperEl.style.display = "flex";
 };
 // eventlinsters
 // emojisCards.forEach((emojiEl) => {
@@ -28,9 +30,11 @@ var hideHeaderFunction = function () {
 // feel free to use mouseover or click,
 // i prefer click
 emojisCards.forEach(function (emojiEl) {
-    emojiEl.addEventListener("click", function () {
+    emojiEl.addEventListener("click", function (e) {
+        var _a;
+        console.log(e);
         changeStyleFunction(emojiEl);
-        console.log(emojiEl);
+        reactText = (_a = emojiEl.lastElementChild) === null || _a === void 0 ? void 0 : _a.textContent;
     });
 });
 SendBtn.addEventListener("click", hideHeaderFunction);
