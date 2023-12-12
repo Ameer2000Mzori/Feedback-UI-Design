@@ -128,3 +128,44 @@ body {
     }
   }
 }
+
+.thank-Wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorOne;
+  height: 550px;
+  width: 330px;
+  border: solid $colorThree 5px;
+  border-radius: 15px;
+
+  #heart-Icon {
+    color: red;
+    font-size: 100px;
+  }
+
+  .first-P {
+    font-size: 20px;
+    font-family: $fontOne;
+    font-weight: 600;
+  }
+
+  .second-P {
+    font-size: 24px;
+    font-family: $fontOne;
+    font-weight: 600;
+  }
+
+  .last-P {
+    font-size: 15px;
+    font-family: $fontOne;
+    color: black;
+    font-weight: 600;
+    max-width: 75%;
+  }
+}

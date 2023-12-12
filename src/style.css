@@ -121,3 +121,44 @@ body {
 .header .head .button-Wrap .Send-Btn:active {
   transform: scale(0.9);
 }
+
+.thank-Wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f8ff;
+  height: 550px;
+  width: 330px;
+  border: solid rgb(189, 189, 189) 5px;
+  border-radius: 15px;
+}
+
+.thank-Wrapper #heart-Icon {
+  color: red;
+  font-size: 100px;
+}
+
+.thank-Wrapper .first-P {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.thank-Wrapper .second-P {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.thank-Wrapper .last-P {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 600;
+  max-width: 75%;
+}
