@@ -13,6 +13,11 @@ var changeStyleFunction = function (emojiEl) {
     // geving the selected class to clicked element
     emojiEl.classList.add("selected");
 };
+// our hideHeader Function
+var hideHeaderFunction = function () {
+    headerEl.hidden = true;
+    thankWrapperEl.hidden = false;
+};
 // eventlinsters
 // emojisCards.forEach((emojiEl) => {
 //   emojiEl.addEventListener("mouseover", () => {
@@ -28,6 +33,4 @@ emojisCards.forEach(function (emojiEl) {
         console.log(emojiEl);
     });
 });
-SendBtn.addEventListener("click", function () {
-    console.log("hallo world");
-});
+SendBtn.addEventListener("click", hideHeaderFunction);

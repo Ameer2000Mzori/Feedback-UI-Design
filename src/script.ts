@@ -17,6 +17,13 @@ const changeStyleFunction = (emojiEl) => {
   emojiEl.classList.add("selected");
 };
 
+// our hideHeader Function
+
+const hideHeaderFunction = (): void => {
+  headerEl.hidden = true;
+  thankWrapperEl.hidden = false;
+};
+
 // eventlinsters
 
 // emojisCards.forEach((emojiEl) => {
@@ -36,6 +43,4 @@ emojisCards.forEach((emojiEl) => {
   });
 });
 
-SendBtn.addEventListener("click", () => {
-  console.log("hallo world");
-});
+SendBtn.addEventListener("click", hideHeaderFunction);
